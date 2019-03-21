@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_operate"
+        android:paddingBottom="2dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_operate"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_info"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_round_bg_search"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/et_info"
+            android:inputType="text"
+            android:paddingEnd="10dp"
+            android:paddingStart="12dp"
+            android:textColorHint="#999999"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/activity_home_story_search_bg"
+                android:gravity="center"
+                android:text="@string/scan_devices"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tv_notify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/activity_home_story_search_bg"
+                android:gravity="center"
+                android:text="@string/device_notify"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tv_read"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/activity_options_off_res_manage"
+                android:gravity="center"
+                android:text="@string/read_data"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/tv_write"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/activity_options_off_res_manage"
+                android:gravity="center"
+                android:text="@string/write_data"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

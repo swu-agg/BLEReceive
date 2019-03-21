@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BLEReceive</string>
+    <string name="et_info">输入需要发送数据</string>
+    <string name="scan_devices">搜索</string>
+    <string name="device_notify">通知</string>
+    <string name="read_data">读数</string>
+    <string name="write_data">写数</string>
+</resources>
